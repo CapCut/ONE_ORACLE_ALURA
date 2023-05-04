@@ -1,0 +1,61 @@
+<meta charset="UTF-8">
+<h1>
+    <center>ESCRITURA AUTOMATICA DE ESTRELLAS</center>
+</h1>
+
+<script>
+    function saltarLinea() {
+
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+    }
+
+    for(var linea = 1; linea <= 3; linea++){
+        for(var columna = 1; columna <= 10; columna++){
+            mostrar("*")
+        }
+        saltarLinea();
+        saltarLinea();
+    }
+
+    mostrar("Fin");
+</script>
+<h1>
+    <center>INICIO DE SESION EN REESES</center>
+</h1>
+<script>
+    var user_registrado = "alura";
+    var password_registrado = "alura321";
+
+    var intentos = 3;
+    var contador = 1;
+
+    while(contador <= intentos){
+        var user_ingresado = prompt("Ingrese su usuario");
+        var password_ingresado = prompt("Ingrese su contraseña");
+
+        if(user_registrado == user_ingresado && password_registrado == password_ingresado){
+            alert("Bienvenido al sistema " + user_ingresado);
+            break;
+        }
+        else{
+            alert("Inicio se sesión invalida, por favor intente de nuevo")
+        }
+        contador ++;    
+    }
+
+    if (user_registrado == user_ingresado && password_registrado == password_ingresado) {
+        saltarLinea();
+        mostrar("Bienvenido al sistema (" + user_ingresado + " )");
+        saltarLinea();
+    }
+    else{
+        saltarLinea();
+        mostrar("No se ha resitrado ningun usuario (" + user_ingresado + " ) en el sistema");
+        saltarLinea();
+    }
+    mostrar("Fin");
+</script>

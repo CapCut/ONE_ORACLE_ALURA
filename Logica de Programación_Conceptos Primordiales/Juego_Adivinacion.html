@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+<h1>
+    <center>PROGRAMA DE ADIVINACIÓN</center>
+</h1>
+
+<script>
+    function saltarLinea() {
+
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var numero_Pensado = Math.round(Math.random()*10);
+    var numero_Lanzado = parseInt(prompt("Ingrese un número entre 0 - 10"));
+
+    if (numero_Pensado == numero_Lanzado) {
+        saltarLinea();
+        mostrar("Usted acertó el numero pensado");
+    }
+
+    else {
+        saltarLinea();
+        mostrar("Usted erro, el numero pensado es " + numero_Pensado);
+    }
+</script>
+
+<h1>
+    <center>PROGRAMA DE PERMISO DE CONDUCIR</center>
+</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+    if (edad >= 18) {
+        saltarLinea();
+        imprimir("Puedes Conducir!");
+    }
+    else{
+        saltarLinea();
+        imprimir("No puedes Conducir!");
+    }
+
+</script>

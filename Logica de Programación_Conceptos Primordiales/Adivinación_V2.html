@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+<h1>
+    <center>PROGRAMA DE ADIVINACIÓN - LIMITADO</center>
+</h1>
+
+<script>
+    function saltarLinea() {
+
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var numero_Pensado = Math.round(Math.random()*10);
+
+    var intentos = 3;
+    var contador = 1;
+
+    while(contador <= intentos){
+        var numero_Lanzado = parseInt(prompt("Ingrese un número entre 0 - 10"));
+        
+        if (numero_Pensado == numero_Lanzado) {
+            saltarLinea();
+            alert("Usted acertó el numero pensado, en el intento " + contador + " y el número pensado era " + numero_Pensado);
+            break;
+        }
+
+        else {
+            saltarLinea();
+            alert("Usted erro");
+        }
+
+        contador ++;
+    }
+
+    if (numero_Pensado == numero_Lanzado) {
+        saltarLinea();
+        mostrar("Usted acertó, el numero pensado es: " + numero_Pensado);
+
+    }
+    else{
+        mostrar("Usted erró, el numero pensado era: " + numero_Pensado)
+    }
+    saltarLinea();
+    mostrar("Fin");
+</script>

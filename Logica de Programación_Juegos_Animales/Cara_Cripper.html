@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+
+<h1>
+	<center>CRYPPER</center>
+</h1>
+
+<canvas width="350" height="300">
+	
+</canvas>
+
+<script>
+	//COMPONENTES DE LA CARA DEL CREPPER
+	var pantalla = document.querySelector('canvas');
+	var pincel = pantalla.getContext('2d');
+
+	//Cabeza
+	pincel.fillStyle = 'green';
+	pincel.fillRect(0, 0, 350, 300);
+
+	//Ojo Izquierdo
+	pincel.fillStyle = 'black';
+	pincel.fillRect(50, 50, 90, 90);
+
+	//Ojo Derecho
+	pincel.fillStyle = 'black';
+	pincel.fillRect(200, 50, 90, 90);
+
+	//Nariz
+	pincel.fillStyle = 'black';
+	pincel.fillRect(135, 140, 70, 100);
+
+	//Partes de la Boca
+	pincel.fillStyle = 'black';
+	pincel.fillRect(95, 190, 40, 110);
+	pincel.fillStyle = 'black';
+	pincel.fillRect(205, 190, 40, 110);
+
+</script>

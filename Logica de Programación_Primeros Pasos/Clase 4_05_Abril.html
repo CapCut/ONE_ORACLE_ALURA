@@ -1,0 +1,52 @@
+<meta charset="utf-8">
+<h1>
+	<center>Funciones</center>
+</h1>
+
+<script>
+	function saltar_linea(){
+		document.write("<br>");
+	}
+
+	function imprimir(cadena){
+		document.write(cadena)
+		//Llamando una funcion dentro de otra.
+		saltar_linea();
+	}
+	//Aquí se usan las funciones anteriormente declaradas
+	imprimir("Rafael: Shishotas asi de grandes Shogun");
+	imprimir("Shogun Ei: (╬▔皿▔)╯");
+</script>
+
+<h1>
+	Ejercicio: Diferencia de edades.
+</h1>
+
+<script>
+	function diferencia(){
+		var h_mayor = 24;
+		var h_menor1 = 20;
+		var h_menor2 = 8;
+		var edad = 22;
+
+		operacion1 = h_mayor - edad;
+		operacion2 = h_menor1 - edad;
+		operacion3 = h_menor2 - edad;
+
+		document.write("Yo tengo una edad de: " +edad+ " "+ "años");
+		saltar_line();
+		document.write("La diferencia de edad entre mi hermano mayor y yo es de: " +operacion1+ " "+ "años");
+		saltar_line();
+		document.write("La diferencia de edad entre mi primer hermano menor y yo es de: " +operacion2+ " "+ "años");
+		saltar_line();
+		document.write("La diferencia de edad entre mi segundo hermano menor y yo es de: " +operacion3+ " "+ "años");
+		saltar_line();
+	}
+
+	function saltar_line(){
+		document.write("<br>");
+	}
+
+	diferencia();
+
+</script>

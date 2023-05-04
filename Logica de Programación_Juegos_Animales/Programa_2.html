@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+
+<h1>
+	<center>NO_NAME</center>
+</h1>
+
+<canvas width="600" height="400">
+	
+</canvas>
+
+<script>
+	function Graficar(x, y, color) {
+		var pantalla = document.querySelector('canvas');
+		var pincel = pantalla.getContext('2d');
+
+		pincel.fillStyle = color;
+		pincel.fillRect(x, y, 50, 50); 
+		pincel.strokeStyle = "black";
+		pincel.strokeRect(x, y, 50, 50);
+	}
+
+
+	var x = 0;
+
+	while(x <= 600){
+		Graficar(x, 0, "red");
+		Graficar(x, 50, "yellow");
+		Graficar(x, 100, "green");
+		x += 50;
+	}
+
+	for (var i = 0; i <= 600; i += 50) {
+		Graficar(i, 150, "red");
+		Graficar(i, 200, "green");
+		Graficar(i, 250, "blue");
+	}
+</script>
