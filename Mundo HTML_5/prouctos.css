@@ -47,7 +47,7 @@ nav a{
 }
 
 .productos h2{
-    font-size: 30px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -59,4 +59,38 @@ nav a{
     font-size: 30px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+/*Capturas de eventos*/
+
+nav a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.productos li:hover{
+    border-color: springgreen;
+}
+
+.productos li:active{
+    border-color: crimson;
+}
+
+.productos li:hover h2{
+    font-size: 30px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagen/bg.jpg);
+    padding: 40px;
+}
+
+/*Aquí acaban los efectos dentro del HTML*/
+
+.copiright{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 auto;
 }
