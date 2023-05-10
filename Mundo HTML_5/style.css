@@ -1,75 +1,123 @@
-body{
-    background: rgb(0, 0, 0);
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0px;
 }
 
-#foto{
-    width: 100%;
-    height: 100%;
-    padding: 10px;
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
 }
 
-h1{
-    text-align: center; 
-    color: #CCCCCC;
-    border: solid #CCCCCC;
-    margin: 40px;
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
 }
 
-h3{
-    text-align: center; 
-    color: #CCCCCC;
-    border: solid #CCCCCC;
-    margin: 40px;
+nav li{
+    display: inline;
+    margin: 0 0 0 20px;
 }
 
-p{
-    text-align: center;
-    font-size: 18px;
-    color: #cccccc;
-}
-
-em strong{
-    color: rgb(34, 210, 216);
-}
-
-#mision{
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
     font-size: 22px;
+    text-decoration: none;
 }
 
-h2{
-    text-align: center; 
-    color: #CCCCCC;
-    border: solid #CCCCCC;
-    margin: 40px;
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
 }
 
-.items{
-    color: #CCCCCC;
-    font-size: 16px;
-}
-
-.diferenciales{
-    background: blue;
-    padding: 10px;
-}
-
-.principal{
-    background: blueviolet;
-    padding: 10px;
-}
-
-ul{
+.productos li{
     display: inline-block;
-    vertical-align: top;
+    text-align: center;
     width: 30%;
-    margin-right: 40%;
-    font-size: 22px;
-    padding: 10px;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
-#image{
+.productos h2{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.contenido{
+    font-size: 18px;
+}
+
+.presio{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*Capturas de eventos*/
+
+nav a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.productos li:hover{
+    border-color: springgreen;
+}
+
+.productos li:active{
+    border-color: crimson;
+}
+
+.productos li:hover h2{
+    font-size: 30px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagen/bg.jpg);
+    padding: 40px;
+}
+
+/*Aquí acaban los efectos dentro del HTML*/
+
+.copiright{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+/*Aquí empiezan los estilos de la pagina de Contacto.html*/
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0px;
+}
+
+form label, form p{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
     width: 50%;
-    height: 50%;
-    padding-left: 40%;
-    vertical-align: top;
+}
+
+.check-box{
+    margin: 20px 0px;
 }
