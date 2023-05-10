@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="caja">
-            <h1><img src="imagen/logo.png"></h1>
+            <h1><img src="imagen/logo.png" alt="Logo de la Barbería Alura"></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -36,8 +36,8 @@
             <label for="mensaje">Mensaje</label>
             <textarea class="input-padron" cols="70" rows="10" id="mensaje" required></textarea>
             
-            <div>
-                <p>¿Cómo le gustaría que lo contactemos?</p>
+            <fieldset>
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
 
                 <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
                 
@@ -46,8 +46,11 @@
                 
 
                 <label for="radio-whatsap"><input type="radio" name="contacto" value="whatsap" id="radio-whatsap" checked>Whatsap</label>
-                
+            </fieldset>
+
+            <div>
                 <p>En cuanto al horario de atención:</p>
+
                 <select>
                     <option>Mañana</option>
                     <option>Tarde</option>
@@ -57,11 +60,34 @@
 
             <label class="check-box"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería Alura?</label>
 
-            <input type="submit" value="Enviar Formulario">
+            <input class="enviar" type="submit" value="Enviar Formulario">
         </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08 h - 24 h</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>08 h - 24 h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08 h - 24 h</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     <footer>
-        <img src="imagen/logo-blanco.png">
+        <img src="imagen/logo-blanco.png" alt="Logo del Copiright">
         <p class="copiright">&copy Copiright Barbería Alura - 2023</p>
     </footer>
 </body>
